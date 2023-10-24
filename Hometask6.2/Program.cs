@@ -9,30 +9,32 @@ namespace Hometask6._2
         {
             Console.Write("Введите значение 1: ");
             double a = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Введите значение 1: ");
+            Console.Write("Введите значение 2: ");
             double b = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-            Console.WriteLine("Сложение - №1\nВычитание - №2\nУмножение - №3\nДеление - №4\n");
+            Console.WriteLine();
+            Console.WriteLine("Сложение - №1\nВычитание - №2\nУмножение - №3\nДеление - №4\nЗакончить - №0\n");
             while (true)
             {
-                Console.Write("Введине номер операции: ");
+                Console.Write("\nВведине номер операции (0 - чтобы закончить): ");
                 switch (Console.ReadLine())
                 {
                     case "1": 
                         Console.WriteLine("Сложение");
                         Hometask6._2.Math.Add(a, b);
-                        break;
+                        continue;
                     case "2":
                         Console.WriteLine("Вычитание");
                         Hometask6._2.Math.Subtract(100, 298374);
-                        break;
+                        continue;
                     case "3":
                         Console.WriteLine("Умножение");
                         Hometask6._2.Math.Multiply(5.2, 2.1);
-                        break;
+                        continue;
                     case "4":
                         Console.WriteLine("Деление");
                         Hometask6._2.Math.Divide(8.1, 30);
+                        continue;
+                    case "0":
                         break;
                     default:
                         Console.WriteLine("Вы ввели неправильное значение");
