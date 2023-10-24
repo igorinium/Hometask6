@@ -8,11 +8,11 @@ namespace Hometask6._1
         public Soda()
         {
         }
-        public Soda( string taste)
+        public Soda(string taste)
         {
             _taste = taste;
         }
-        public void GetTaste() 
+        public void GetTaste()
         {
             Console.WriteLine($"У вас {_taste} газировка");
         }
